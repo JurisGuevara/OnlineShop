@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Item - Lazada Clone</title>
+
+    <!-- link to customized style sheet css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- link to downloaded bootstrap files -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+
+    <!-- link to downloaded font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+<!-- =================================Fixed search bar============================================================= -->
+    <!-- ******Top search bar and category links. Categories show on large screens but disappear on mobile ***** -->
+    <div class="search-bar-1 container-fluid position-fixed bg-success">
+        <div class="search-bar-margin row p-1 mx-auto">
+            <div class="col-3">
+                <div class="d-flex justify-content-end">
+                    <img class="logo1" src="./img/cart.png">
+                    <a href="index.html" style="text-decoration: none">
+                    	<h3 class="text-white">nline shop</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row justify-content-start">
+                    <a href="login_page.html" class="btn btn-link text-white text-uppercase"><strong>Login</strong></a>
+                    <a href="signup_page.html" class="btn btn-link text-white text-uppercase"><strong>Signup</strong></a>
+                </div>
+            </div>
+            <div class="col-12 p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-between">
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Home Appliances</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Electronic Devices</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Toys</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Clothing & footwear</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Health & Beauty</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Sports</a>
+                            <a href="category_page.html" class="btn btn-link text-white text-capitalize">Groceries</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Drop down button. Hidden on large screens but shown on mobile. Has the same contents as that of the search bar -->
+    <!-- ***************Displays the contents of the search bar when on mobile screens***************** -->
+    <div class="search-bar-2 container-fluid bg-success">
+        <div class="row p-1">
+            <div class="col">
+                <img class="logo1" src="./img/cart.png">
+            </div>
+            <div class="col-8">
+                <div class="d-flex">
+                    <input type="text" class="form-control" placeholder="Search Online Shop">
+                    <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="col text-right">
+                <div class="btn-group dropleft">
+                  <button type="button" class="btn btn-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="dropdown-menu bg-success">
+                        <div class="d-flex align-items-center pl-3">
+                            <img class="logo2 p-0 m-0" src="./img/cart.png">
+                            <a href="index.html" style="text-decoration: none">
+                            	<div class="dropdown-item bg-success text-white p-0 m-0" href="#">nline Shop</div>
+                            </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">Home Appliances</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">Electronic Devices</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">Toys</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">Clothing & footwear</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">health & beauty</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">sports</a>
+                        <a class="dropdown-item bg-success text-white text-capitalize" href="category_page.html">groceries</a>
+                        <div class="dropdown-divider"></div>
+                            <a class="dropdown-item bg-success text-white text-uppercase" href="login_page.html"><strong>login</strong></a>
+                            <a class="dropdown-item bg-success text-white text-uppercase" href="signup_page.html"><strong>signup</strong></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ===================================End of fixed search bar======================================================== -->
+
+<!-- ============================Beginning of landing images and item cards============================================ -->
+    <!-- ************************Contains the landing images and item cards************************************* -->
+    <div class="content container px-0">
+        <!-- ***************Contains the landing and advertisement images************* -->
+        <div class="content-landing row justify-content-center align-items-center">
+            <!-- ***********Contains the landing images in a carousel************ -->
+            <div class="col-md-8 m-0 p-0">
+                <div class="item-carousel container-fluid">
+                    <div class="row align-items-center justify-content-center">
+                    	<div class="col-md-5 col-5 mx-auto text-center">
+                    		<div id="item-carousel-home-app" class="carousel slide" data-ride="carousel">
+                                <div class="custom-carousel-display">
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#item-carousel-home-app" data-slide-to="0" class="active"></li>
+                                        <li data-target="#item-carousel-home-app" data-slide-to="1"></li>
+                                        <li data-target="#item-carousel-home-app" data-slide-to="2"></li>
+                                        <li data-target="#item-carousel-home-app" data-slide-to="3"></li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="./items/home_appliances/a.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-item-img">
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./items/home_appliances/b.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-item-img">
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./items/home_appliances/c.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-item-img">
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-carousel-display">
+                                    <a href="#item-carousel-home-app" class="carousel-control-prev" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a href="#item-carousel-home-app" class="carousel-control-next" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                    	</div>
+                    	<div class="col-md-7 col-10 mx-auto text-left">
+                    		<h4 class="text-left">Product Name, Brand, Model</h4>
+                    		<p class="text-left">
+                    			Product description. Product description. Product description. Product description. Product description.
+                    		</p>
+	                    	<div class="mb-4">
+	                            <i class="fas fa-star text-warning small"></i>
+	                            <i class="fas fa-star text-warning small"></i>
+	                            <i class="fas fa-star text-warning small"></i>
+	                            <i class="fas fa-star-half-alt text-warning small"></i>
+	                            <i class="far fa-star text-warning small"></i>
+	                            <br>
+		                        <div class="text-primary">
+		                            <span class="text-primary">23</span>&#160;Ratings&#160;<span class="text-secondary">|</span>&#160;
+		                            <span>3</span>&#160;Reviews
+		                        </div>
+	                        </div>
+                        	<h4 class="custom-text-color">&#8369;<span>199.00</span></h4>
+                        	<p class="p-0 m-0 mb-4">
+                            	<del><span>&#8369;</span><span>999.00</span></del>&#160;&#160;<span>-80%</span>
+                            </p>
+                        	<div class="mb-4">
+                        		Quantity
+                        		<input type="number" value="1" min="1" max="99">
+                        	</div>
+                        	<div class="row">
+                        		<div class="col-6">
+                        			<button class="btn btn-success text-capitalize w-100">buy now</button>
+                        		</div>
+                        		<div class="col-6">
+                        			<button class="btn btn-primary text-capitalize w-100">add to cart</button>
+                        		</div>
+                        	</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ***********Contains the advertisement images in a carousel************ -->
+            <div class="ads col-md-4 m-0 p-0">
+                <div class="container-fluid">
+                    <div class="row mx-auto">
+                        <div class="col-12 mx-auto text-center">
+                            <div id="example2" class="carousel slide carousel-fade" data-ride="carousel">
+                                <!-- <ul class="carousel-indicators">
+                                    <li data-target="#example2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#example2" data-slide-to="1"></li>
+                                    <li data-target="#example2" data-slide-to="2"></li>
+                                    <li data-target="#example2" data-slide-to="3"></li>
+                                </ul> -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <a href="#">
+                                            <img src="./img/side_ad_1.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-img">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#">
+                                            <img src="./img/side_ad_2.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-img">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#">
+                                            <img src="./img/side_ad_3.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-img">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="#">
+                                            <img src="./img/side_ad_4.jpg" alt="project" class="d-block img-fluid w-100 custom-carousel-img">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <h3></h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a href="#example2" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a href="#example2" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+<!-- ============================End of landing images and item cards============================================== -->
+
+<!-- ========================================Ratings============================================= -->
+	<div class="container px-2">
+		<h5>Ratings</h5>
+		<div class="row">
+			<div class="col-lg-8 col-10 mx-auto p-0">
+				<div class="row align-items-center">
+					<div class="col-4">
+						<h1 class="display-4 text-left"><strong>3.5</strong><span class="text-secondary small">/5</span></h1>
+						<i class="fas fa-star text-warning fa-lg"></i>
+	                    <i class="fas fa-star text-warning fa-lg"></i>
+	                    <i class="fas fa-star text-warning fa-lg"></i>
+	                    <i class="fas fa-star-half-alt text-warning fa-lg"></i>
+	                    <i class="far fa-star text-warning fa-lg"></i>
+	                    <p>
+						&#160;<span>23</span> Ratings
+						</p>
+					</div>
+					<div class="col-8">
+						<div class="row">
+							<div class="col-12">
+								<div class="row d-flex justify-content-start align-items-center">
+									<div>
+										<i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+									</div>
+									<div class="col-6">
+										<div class="progress">
+  											<div class="progress-bar bg-warning" role="progressbar" style="width: 60%"></div>
+										</div>
+									</div>
+									<div>
+										5
+									</div>
+								</div>
+								<div class="row d-flex justify-content-start align-items-center">
+									<div>
+										<i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+									</div>
+									<div class="col-6">
+										<div class="progress">
+  											<div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+										</div>
+									</div>
+									<div>
+										7
+									</div>
+								</div>
+								<div class="row d-flex justify-content-start align-items-center">
+									<div>
+										<i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+									</div>
+									<div class="col-6">
+										<div class="progress">
+  											<div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+										</div>
+									</div>
+									<div>
+										8
+									</div>
+								</div>
+								<div class="row d-flex justify-content-start align-items-center">
+									<div>
+										<i class="fas fa-star text-warning small"></i>
+					                    <i class="fas fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+									</div>
+									<div class="col-6">
+										<div class="progress">
+  											<div class="progress-bar bg-warning" role="progressbar" style="width: 0%"></div>
+										</div>
+									</div>
+									<div>
+										0
+									</div>
+								</div>
+								<div class="row d-flex justify-content-start align-items-center">
+									<div>
+										<i class="fas fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+					                    <i class="far fa-star text-warning small"></i>
+									</div>
+									<div class="col-6">
+										<div class="progress">
+  											<div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+										</div>
+									</div>
+									<div>
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+    
+<!-- ======================================Products Review======================================================= -->
+	<div class="container px-2 bg-light mt-5">
+		<h5 class="pt-2">Product Reviews</h5>
+		<div class="row">
+			<!-- ===============Beginning of comment================= -->
+			<div class="col-12">
+				<hr>
+				Nov 3, 2019
+			</div>
+			<div class="col-12">
+				<div class="">
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+				</div>
+			</div>
+			<div class="col-12">
+				by <span class="text-capitalize">Customer's Name</span><i class="fas fa-check text-success pl-3">&#160;Verified Purchase</i>
+			</div>
+			<div class="col-12">
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="col-12 pt-2">
+				<i class="fas fa-thumbs-up text-secondary"></i>&#160;&#160;<span>5</span>&#160;&#160;Customers found this review helpful
+			</div>
+			<!-- ==================End of comment==================== -->
+			<!-- ===============Beginning of comment================= -->
+			<div class="col-12">
+				<hr>
+				Dec 17, 2019
+			</div>
+			<div class="col-12">
+				<div class="">
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="far fa-star text-warning small"></i>
+				</div>
+			</div>
+			<div class="col-12">
+				by <span class="text-capitalize">Customer's Name</span><i class="fas fa-check text-success pl-3">&#160;Verified Purchase</i>
+			</div>
+			<div class="col-12">
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</div>
+			<div class="col-12 pt-2">
+				<i class="fas fa-thumbs-up text-secondary"></i>&#160;&#160;<span>2</span>&#160;&#160;Customers found this review helpful
+			</div>
+			<!-- ==================End of comment==================== -->
+			<!-- ===============Beginning of comment================= -->
+			<div class="col-12">
+				<hr>
+				Jan 20, 2020
+			</div>
+			<div class="col-12">
+				<div class="">
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="fas fa-star text-warning small"></i>
+					<i class="far fa-star text-warning small"></i>
+					<i class="far fa-star text-warning small"></i>
+				</div>
+			</div>
+			<div class="col-12">
+				by <span class="text-capitalize">Customer's Name</span><i class="fas fa-check text-success pl-3">&#160;Verified Purchase</i>
+			</div>
+			<div class="col-12">
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</div>
+			<div class="col-12 pt-2">
+				<i class="fas fa-thumbs-up text-secondary"></i>&#160;&#160;<span>3</span>&#160;&#160;Customers found this review helpful
+			</div>
+			<!-- ==================End of comment==================== -->
+		</div>
+	</div>
+
+
+<!-- ====================================Payments info============================================================= -->    
+    <div class="pay-info">
+        <div class="container my-5 px-0">
+            <div class="row p-2">
+                <div class="col-6">
+                    <div class="container px-0">
+                        <div class="row">
+                            <div class="col-12 pb-2">
+                                <strong class="text-capitalize">payment methods</strong>
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify-content-around">
+                                    <img src="./logos/visa.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/mastercard.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/jcb.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/paymaya.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/gcash.jpg" class="custom-logo-size img-fluid m-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pb-2">
+                                <strong class="text-capitalize">delivery services</strong>
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify-content-around">
+                                    <img src="./logos/lbc.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/dhl.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/fedex.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/ups.jpg" class="custom-logo-size img-fluid m-1">
+                                    <img src="./logos/yrc.jpg" class="custom-logo-size img-fluid m-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ====================================Company info============================================================= -->    
+    <div class="company-info">
+        <div class="container pt-2 px-0">
+            <div class="row px-2">
+                <div class="col-lg-3 col-6 small">
+                    <h5>Payment</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 small">
+                    <h5>Delivery</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 small">
+                    <h5 class="text-capitalize">customer care</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 small">
+                <h5 class="text-capitalize">online shop</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================================follow us info========================================================== -->        
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 mb-2">
+                <strong class="text-capitalize">follow us</strong>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="row d-flex justify-content-around">
+                        <a href="#"><i class="px-1 fab fa-facebook-f fa-2x" style="color: #3b5998"></i></a>
+                        <a href="#"><i class="px-1 fab fa-twitter fa-2x text-primary"></i></a>
+                        <a href="#"><i class="px-1 fab fa-youtube fa-2x text-danger"></i></a>
+                        <a href="#"><i class="px-1 fab fa-tumblr-square fa-2x" style="color: #34526f"></i></a>
+                        <a href="#"><i class="px-1 fab fa-twitch fa-2x text-success"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====================================footer info============================================================= -->    
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row bg-success py-1">
+                <div class="col text-white text-center">
+                    &copy;2020 Online Shop
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 3rem"></div>
+
+	<!-- link to customized main js -->
+	<script src="js/main.js"></script>
+
+    <!-- link to downloaded jquery -->
+    <script src="bootstrap4/js/jquery-3.4.1.min.js"></script>
+
+    <!-- link to downloaded bootstrap javascript -->
+    <script src="bootstrap4/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
